@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Estudos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <div class="contador">
+        <form id="form">
+            <input type="text" id="disciplina" placeholder="Disciplina" required>
+            
+            <input type="text" id="descricao" placeholder="Descrição da tarefa" required>
+
+            <select id="prioridade">
+                <option value="Baixa">Baixa</option>
+                <option value="Media">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+
+        <p>Total: <span id="total">0</span></p>
+        <p>Concluídas: <span id="concluidas">0</span></p>
+        <p>Pendentes: <span id="pendentes">0</span></p>
+    </div>
+</body>
+</html>
